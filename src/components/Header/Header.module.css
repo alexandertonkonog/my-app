@@ -1,0 +1,23 @@
+.header img {
+  	width: 150px;	
+  	padding: 10px;
+  	padding-left: 30px;
+}
+.header {
+  	grid-area: h;
+  	background-color: #EBEBEB;
+  	margin-bottom: 10px;
+}
+.login {
+	float: right;
+	margin: 20px;
+	border: none;
+	width: 100px;
+	height: 40px;
+	background-color: red;
+	color : white;
+}
+.loginexit {
+	float: right;
+	margin: 20px;
+}

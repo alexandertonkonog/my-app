@@ -1,0 +1,24 @@
+.DialogsItem {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding: 10px;
+	margin-right: 10px;
+	text-decoration: none;
+	color: black;
+}
+.DialogsItem:hover {
+	background-color: #EBEBEB;
+}
+.avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+}
+.description {
+	padding-top: 15px;
+	display: block;
+	margin-left: 5px;
+}

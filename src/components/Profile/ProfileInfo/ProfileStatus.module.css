@@ -1,0 +1,22 @@
+.status {
+	height: 30px;
+	padding-left: 10px;
+	font-size: 20px;
+}
+.button {
+	border: none;
+	margin-left: 10px;
+	width: 100px;
+	height: 30px;
+	background-color: red;
+	color : white;
+}
+.form {
+	margin: 20px 0;
+}
+.statusP {
+	cursor: pointer;
+}
+.statusP:hover {
+	color: black;
+}

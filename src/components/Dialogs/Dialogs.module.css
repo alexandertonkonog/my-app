@@ -1,0 +1,43 @@
+.Dialogs {
+	display: grid;
+	grid-template-columns: 2fr 10fr;
+}
+.DialogsItems {
+	list-style: none;
+	border-right: 1px solid #9D9D9D;
+}
+.messages {
+	padding: 0 30px;
+	list-style: none;
+}
+.textareaZone button {
+	width: 100px;
+	height: 40px;
+	background-color: red;
+	color: white;
+	border: none;
+	display: block;
+	margin-top: 10px;
+}
+.textareaZone button:hover {
+	box-shadow:0px 4px 11px 3px rgba(255,10,10,0.28);
+	-webkit-box-shadow:0px 4px 11px 3px rgba(255,10,10,0.28);
+	-moz-box-shadow:0px 4px 11px 3px rgba(255,10,10,0.28);
+}
+.textareaZone {
+	margin-left: 35px;
+	background-color: #EBEBEB;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 30px;
+}
+.textarea {
+	width: 800px;
+	height: 50px;
+	margin: 10px;
+	margin-left: 80px;
+	resize: none;
+}

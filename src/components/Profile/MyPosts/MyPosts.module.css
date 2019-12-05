@@ -1,0 +1,36 @@
+
+.posts {
+	margin-top: 30px;
+}
+.postTitle {
+	margin: 20px 0;
+}
+.Myposts textarea {
+	width: 500px;
+	height: 80px;
+	margin-bottom: 10px;
+	resize: none;
+}
+button {
+	border: 1px solid #A9A9A9;
+	background-color: white;
+	cursor: pointer;
+}
+.Myposts button {
+	width: 100px;
+	height: 40px;
+	margin-right: 30px;
+}
+.DialogsWrapper button:hover {
+	background-color: red;
+	color: white;
+	border: none;
+	box-shadow:0px 4px 11px 3px rgba(255,10,10,0.28);
+	-webkit-box-shadow:0px 4px 11px 3px rgba(255,10,10,0.28);
+	-moz-box-shadow:0px 4px 11px 3px rgba(255,10,10,0.28);
+}
+.activeButton {
+	background-color: red;
+	color: white;
+	border: none;
+}

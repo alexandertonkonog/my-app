@@ -1,0 +1,54 @@
+.profile {
+	display: grid;
+	grid-template-columns: 2fr 8fr;
+}
+.ava {
+	width: 200px;
+	height: 250px;
+}
+.profileDes p {
+	line-height: 30px;
+	color: grey;
+}
+.links ul {
+	list-style: none;
+	padding: 0;
+}
+.linkCircle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: red;
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+.links ul a {
+	color: grey;
+	text-decoration: none;
+}
+.links li {
+	line-height: 30px;
+}
+.links ul a:hover {
+	text-decoration: underline;
+}
+.info {
+	display: grid;
+	grid-template-columns: 6fr 6fr ;
+}
+.button {
+	color: white;
+	background-color: red;
+	cursor: pointer;
+	width: 100px;
+	height: 40px;
+	margin-top: 10px;
+	margin-right: 30px;
+	border: none;
+}
+.button:hover {
+	box-shadow:0px 4px 11px 3px rgba(255,10,10,0.28);
+	-webkit-box-shadow:0px 4px 11px 3px rgba(255,10,10,0.28);
+	-moz-box-shadow:0px 4px 11px 3px rgba(255,10,10,0.28);
+}
