@@ -8,16 +8,15 @@ const Pagination = ({totalItemsCount, pageSize, currentPage, onPageChanged, porc
 	for(let i=1; i<=pagesCount; i++){
 		pages.push(i);
 	}
-	const [currentItem, setCurrentItem] = useState(currentPage);
-	let changeCurrentItem = (item) => {
-		setCurrentItem(currentItem+item);
-		onPageChanged(currentItem+item);
-	}
-	console.log(pagesCount)
+	let portionCount = Math.ceil(pagesCount/ porcion);
+	const [porcionNum, setPorcionNum] = useState(1);
+	let leftBorder = (porcionNum-1)*porcion+1;
+	let rightBorder = porcionNum * porcion;
+	
 	return  <div className={s.pagination} >
-				{currentItem>porcion && <span onClick={(e)=>{changeCurrentItem(-porcion)}} >Назад</span>}
-				{ pages.filter(p => p >= currentItem && p < currentItem+porcion).map( p => <span className={currentPage===p && s.currentPage} onClick={(e)=>{onPageChanged(p)}} >{p}</span>) }
-				{currentItem<pagesCount-porcion &&<span onClick={(e)=>{changeCurrentItem(porcion)}} >Вперед</span>}
+				{porcionNum > 1 && <span onClick={(e)=>{setPorcionNum(porcionNum-1)}} >Назад</span>}
+				{pages.filter(p => p >= leftBorder && p <= rightBorder).map( p => <span key={p} className={currentPage===p && s.currentPage} onClick={(e)=>{onPageChanged(p)}} >{p}</span>)}
+				{portionCount > porcionNum && <span onClick={(e)=>{setPorcionNum(porcionNum+1)}} >Вперед</span>}
 		    </div>
 };
 
@@ -28,7 +27,7 @@ export const PaginationCount = ({pageSize, currentPage, onCountChanged})=> {
 	return  <div className={s.countProfile} >
 				<p>Количество профилей на странице:</p>
 				<div className={s.countProfileInside} >
-					{pages.map( p => <span className={pageSize === p && s.currentPage} onClick={(e)=>{onCountChanged(p)}} >{p}</span>)}
+					{pages.map( p => <span key={p} className={pageSize === p && s.currentPage} onClick={(e)=>{onCountChanged(p)}} >{p}</span>)}
 				</div>
 			</div>
 };
