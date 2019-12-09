@@ -1,0 +1,63 @@
+.pagination {
+	width: 500px;
+	margin: 30px 0;
+}
+.pagination span {
+	padding: 5px;
+	margin: 0 5px;
+	border: 1px solid grey;
+	text-align: center;
+	color: black;
+	cursor: pointer;
+}
+.pagination span:hover {
+	background-color: #EBEBEB;
+}
+.pagination .currentPage {
+	color: white;
+	background-color: red;
+	border: none;
+}
+.pagination .currentPage:hover {
+	background-color: red;
+}
+.countProfile {
+	position: fixed;
+	right: 100px;
+	top: 200px;
+	border: 1px solid grey;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: white;
+}
+.countProfile p {
+	font-weight: bold;
+}
+.countProfileInside {
+	padding: 20px 0;
+}
+.countProfileInside span {
+	padding: 5px;
+	margin: 0 5px;
+	border: 1px solid grey;
+	text-align: center;
+	color: black;
+	cursor: pointer;
+}
+.countProfileInside span:hover {
+	background-color: #EBEBEB;
+}
+.countProfileInside .currentPage {
+	color: white;
+	background-color: red;
+	border: none;
+}
+.countProfileInside .currentPage:hover {
+	background-color: red;
+}
+.backNext {
+	width: ;
+	height: ;
+	padding: 5px;
+	margin: 0 5px;
+}
